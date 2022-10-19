@@ -114,7 +114,7 @@
               <div class="details mt-20">
                 <h3>{{ fresh.title }}</h3>
                 <p>{{ fresh.text|truncatechars:200 }}</p>
-                <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
+                <a class="button" href="post/{{fresh.slug}}">Read More <i class="ti-arrow-right"></i></a>
               </div>
             </div>
             {% endfor %}          
