@@ -33,9 +33,11 @@
         <div class="main_blog_details">
 
           {% if post.image_url %}
-          <img class="img-fluid" src="{% static  post.image_url %}" alt="Blog_image">
+          <img class="img-fluid" src="{% static post.image_url %}"
+            alt="Blog_image">
           {% else %}
-          <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Blog_image">
+          <img class="img-fluid" src="{% static 'img/banner/blog.png' %}"
+            alt="Blog_image">
           {% endif %}
 
           <h4>{{ post.title }}</h4>
@@ -52,8 +54,9 @@
           <p>{{ post.text }}</p>
           <div class="news_d_footer flex-column flex-sm-row">
             <a href="#"><span class="align-middle mr-2"><i class="ti-heart"></i></span>{{ post.likes_amount }}</a>
-            <a class="justify-content-sm-center ml-sm-auto mt-sm-0 mt-2" href="#"><span class="align-middle mr-2"><i
-                  class="ti-themify-favicon"></i></span>{{ post.comments|length }} Comments</a>
+            <a class="justify-content-sm-center ml-sm-auto mt-sm-0 mt-2"
+              href="#"><span class="align-middle mr-2">
+                <i class="ti-themify-favicon"></i></span>{{ post.comments|length }} Comments</a>
             <div class="news_socail ml-sm-auto mt-sm-0 mt-2">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
@@ -93,8 +96,10 @@
             <h4 class="single-sidebar-widget__title">Newsletter</h4>
             <div class="form-group mt-30">
               <div class="col-autos">
-                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email"
-                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
+                <input type="text" class="form-control"
+                  id="inlineFormInputGroup" placeholder="Enter email"
+                  onfocus="this.placeholder= ''" onblur="this.placeholder=
+                  'Enter email'">
               </div>
             </div>
             <button class="bbtns d-block mt-20 w-100">Subcribe</button>

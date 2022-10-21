@@ -64,9 +64,11 @@
             <div class="thumb">
 
               {% if fresh.image_url %}
-              <img class="img-fluid" src="{% static fresh.image_url %}" alt="fresh_post_image">
+              <img class="img-fluid" src="{% static fresh.image_url %}"
+                alt="fresh_post_image">
               {% else %}
-              <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="fresh_post_image">
+              <img class="img-fluid" src="{% static 'img/banner/blog.png' %}"
+                alt="fresh_post_image">
               {% endif %}
 
               <ul class="thumb-info">
@@ -78,7 +80,8 @@
             <div class="details mt-20">
               <h3>{{ fresh.title }}</h3>
               <p>{{ fresh.text|truncatechars:200 }}</p>
-              <a class="button" href="post/{{fresh.slug}}">Read More <i class="ti-arrow-right"></i></a>
+              <a class="button" href="post/{{ fresh.slug }}">Read More <i
+                  class="ti-arrow-right"></i></a>
             </div>
           </div>
           {% endfor %}
@@ -116,8 +119,9 @@
               <h4 class="single-sidebar-widget__title">Newsletter</h4>
               <div class="form-group mt-30">
                 <div class="col-autos">
-                  <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
+                  <input type="text" class="form-control"
+                    id="inlineFormInputGroup" placeholder="Enter email"
+                    onfocus="this.placeholder= ''" onblur="this.placeholder='Enter email'">
                 </div>
               </div>
               <button class="bbtns d-block mt-20 w-100">Subcribe</button>
