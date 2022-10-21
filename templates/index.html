@@ -33,7 +33,7 @@
             <div class="blog__slide__img">
 
               {% if post.image_url %}
-              <img class="img-fluid" src="{% static post.image_url %}" alt="Blog_image">
+              <img class="img-fluid" src="{{ post.image_url }}" alt="Blog_image">
               {% else %}
               <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="Blog_image">
               {% endif %}
@@ -64,7 +64,7 @@
             <div class="thumb">
 
               {% if fresh.image_url %}
-              <img class="img-fluid" src="{% static fresh.image_url %}"
+              <img class="img-fluid" src="{{ fresh.image_url }}"
                 alt="fresh_post_image">
               {% else %}
               <img class="img-fluid" src="{% static 'img/banner/blog.png' %}"
